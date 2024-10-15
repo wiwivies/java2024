@@ -1,3 +1,7 @@
+package com.company.itstep;
+
+import com.company.itstep.models.User;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -11,5 +15,10 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }
+
+        User user = new User(1, "meh", "sdmvdk1@gmail.com", "123445");
+        String userEmail = user.getEmail();
+        System.out.println(userEmail);
+
     }
 }
